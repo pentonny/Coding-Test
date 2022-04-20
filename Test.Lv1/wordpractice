@@ -7,19 +7,19 @@ public class wordpractice {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		String str =sc.nextLine();
-		str = str.toUpperCase(); //´ë¹®ÀÚ·Î ¸ğµÎ ÀüÈ¯(toLowerCase ¼Ò¹®ÀÚ)
-		int alphabet[] = new int[26]; //A~Z±îÁö 0~25¿¡ °¢°¡ ³ª¿Â È½¼ö¸¦ ÀúÀåÇÒ ¹è¿­ ÃÊ±âÈ­
+		str = str.toUpperCase(); //ëŒ€ë¬¸ìë¡œ ëª¨ë‘ ì „í™˜(toLowerCase ì†Œë¬¸ì)
+		int alphabet[] = new int[26]; //A~Zê¹Œì§€ 0~25ì— ê°ê°€ ë‚˜ì˜¨ íšŸìˆ˜ë¥¼ ì €ì¥í•  ë°°ì—´ ì´ˆê¸°í™”
 		for(int i = 0; i<str.length();i++) {
-			alphabet[str.charAt(i)-'A']++; //³ª¿Â ´Ü¾î¿¡ ÇØ´çÇÏ´Â ÀÎµ¦½ºÀÇ Á¤¼ö°ªÀ» 1¾¿ Áõ°¡ÇÑ´Ù.
+			alphabet[str.charAt(i)-'A']++; //ë‚˜ì˜¨ ë‹¨ì–´ì— í•´ë‹¹í•˜ëŠ” ì¸ë±ìŠ¤ì˜ ì •ìˆ˜ê°’ì„ 1ì”© ì¦ê°€í•œë‹¤.
 		}
 		int max = 0, ans =0;
 		for(int  i = 0; i<alphabet.length; i++) {
-			if(max < alphabet[i]) { //Áö±İ±îÁö ³ª¿Â ÃÖºó°ªÀÌ¶û ÇöÀç ÀÎµ¦½ºÀÇ ÀúÀåµÈ °ªÀÌ¶û ºñ±³
+			if(max < alphabet[i]) { //ì§€ê¸ˆê¹Œì§€ ë‚˜ì˜¨ ìµœë¹ˆê°’ì´ë‘ í˜„ì¬ ì¸ë±ìŠ¤ì˜ ì €ì¥ëœ ê°’ì´ë‘ ë¹„êµ
 				max = alphabet[i];
 				ans = i;
 			}
 			else if(max == alphabet[i]){
-				ans = -2; //¾Æ½ºÅ°ÄÚµå 65-2 = 63 ?°¡ ³ª¿È
+				ans = -2; //ì•„ìŠ¤í‚¤ì½”ë“œ 65-2 = 63 ?ê°€ ë‚˜ì˜´
 			}
 		}
 		System.out.printf("%s",Character.toString(ans+'A'));
