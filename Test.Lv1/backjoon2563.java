@@ -23,4 +23,5 @@ public class backjoon2563 {
 		}
 		System.out.print(max + "\n" + index);
 		}
+	
 	}
