@@ -10,5 +10,4 @@ public class Main11654 {
 		System.out.print(ch);
 	}
 
-	
 }
