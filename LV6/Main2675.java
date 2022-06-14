@@ -17,6 +17,7 @@ public class Main2675 {
 			}
 			System.out.println();
 		}
+		
 	}
 
 }
