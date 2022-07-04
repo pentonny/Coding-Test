@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main1929 {
 	
 	public static boolean[] prime;
