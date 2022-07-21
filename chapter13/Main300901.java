@@ -47,5 +47,4 @@ public class Main300901 {
 		}
 		System.out.println(x + " " + y);
 	}
-
 }
