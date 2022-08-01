@@ -33,5 +33,4 @@ public class Main101001 {
 		}
 		System.out.println(sb);
 	}
-
 }
